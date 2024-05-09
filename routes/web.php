@@ -8,7 +8,10 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+//    return dd(auth()->user()->lista);
+    $data = \App\Models\Lista::with('produtos')->get();
+    $moreData = 'some more data';
+    return view('dashboard', compact('data', 'moreData'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
