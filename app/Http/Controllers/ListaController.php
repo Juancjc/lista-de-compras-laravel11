@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ListaRequest;
+use Illuminate\Http\Request;
 use App\Models\Lista;
 
 class ListaController extends Controller
@@ -11,10 +12,17 @@ class ListaController extends Controller
     {
         return Lista::all();
     }
-
-    public function store(ListaRequest $request)
+    public function create(ListaRequest $request)
     {
-        return Lista::create($request->validated());
+
+        return view('lista.form');
+    }
+    public function store(Request $request)
+    {
+
+        $lista = Lista::create($request->all());
+        $lista->save();
+        return redirect()->route('dashboard');
     }
 
     public function show(Lista $lista)

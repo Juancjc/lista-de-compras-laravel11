@@ -16,6 +16,15 @@ class Lista extends Model
         'descricao',
         'id_usuario'
     ];
+    static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($model) {
+            $model->id_usuario = auth()->user()->id;
+        });
+
+    }
     public function usuario()
     {
         return $this->belongsTo(Usuario::class, 'id_usuario');

@@ -17,8 +17,11 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 text-gray-900 dark:text-gray-100">
-                <x-input-label value="Name" />
-                <x-text-input name="name" />
+                <a href="{{ route('lista.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="bi bi-bag-plus"></i> Criar Lista</a>
+                <div class="pt-8">
+
+                </div>
             </div>
         </div>
     </div>
