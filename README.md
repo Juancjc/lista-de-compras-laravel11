@@ -15,7 +15,7 @@ php artisan serve
 ```
 Até aqui, o projeto já está rodando em http://localhost:8000 mas sem nada de interessante.
 
-## Laravel Breeze para temos login e register
+## Laravel Breeze para ter login e register
 
 ```bash 
 composer require laravel/breeze --dev
