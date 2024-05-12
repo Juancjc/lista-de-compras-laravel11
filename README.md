@@ -1,9 +1,22 @@
 
 ## Sobre o projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## Primeira instalação de um projeto laravel
+## Intalar projeto pronto
+Crie o .env padrão para usar o sqlite o que preferir
+```bash
+cp .env.example .env
+npm install
+composer install
+php artisan key:generate
+```
+Iniciar o projeto
+```bash
+php artisan serve
+npm run dev
+```
+
+## Primeira instalação de um projeto laravel (se for do zero)
 
 ```bash
 composer create-project laravel/laravel nome-do-projeto
