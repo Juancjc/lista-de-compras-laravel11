@@ -15,6 +15,7 @@ class Produto extends Model
         'nome',
         'descricao',
         'preco',
+        'quantidade',
         'id_lista'
     ];
     public function lista()

@@ -29,7 +29,8 @@ class Lista extends Model
     {
         return $this->belongsTo(Usuario::class, 'id_usuario');
     }
-    public function produtos(){
+    public function produtos()
+    {
         return $this->hasMany(Produto::class, 'id_lista', 'id_lista');
     }
 }
