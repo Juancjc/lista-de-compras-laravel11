@@ -16,9 +16,9 @@ php artisan serve
 npm run dev
 ```
 Vai abrir local 
-``´bash
+```bash
  http://localhost:8000
-´´´
+```
 
 ## Primeira instalação de um projeto laravel (se for do zero)
 
