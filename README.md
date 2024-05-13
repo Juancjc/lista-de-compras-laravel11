@@ -3,7 +3,7 @@
 
 
 ## Intalar projeto pronto
-Crie o .env padrão para usar o sqlite o que preferir
+Crie o .env padrão para usar o sqlite ou altere para usar o banco de dados que preferir
 ```bash
 cp .env.example .env
 npm install
